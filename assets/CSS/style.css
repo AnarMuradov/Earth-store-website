@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-image: url(https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 713px;
+}
+.header .header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.header .header-nav .header-nav-item ul {
+  display: flex;
+  gap: 40px;
+}
+.header .header-nav .header-nav-item ul .header-nav-item ul li a {
+  color: white;
+}
+.header .header-nav .header-nav-item ul .fa-solid {
+  padding: 0px 5px;
+}
+.header .header-nav .header-nav-item ul .fa-solid .amount {
+  display: inline-block;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+}
+.header .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 613px;
+  gap: 25px;
+}
+.header .header-container .header-container-name h1 {
+  font-size: 80px;
+  color: #2c541d;
+}
+.header .header-container .header-container-name h3 {
+  font-size: 40px;
+  font-weight: 100;
+}
+.header .header-container .header-container-btn a {
+  width: 186px;
+  height: 46px;
+  background-color: #74a84a;
+  text-align: center;
+  line-height: 46px;
+  display: inline-block;
+  color: white;
+}
+
+.section1 {
+  max-width: 100%;
+  min-height: 653px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section1 .section1-box1 {
+  height: 500px;
+}
+.section1 .section1-box1 .box1-img {
+  position: relative;
+  max-width: 350px;
+  min-height: 350px;
+  cursor: pointer;
+}
+.section1 .section1-box1 .box1-img .fa-solid {
+  opacity: 0;
+  color: green;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  transition: 300ms;
+}
+.section1 .section1-box1 .box1-img .atc {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 90px;
+  height: 24px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 300ms;
+}
+.section1 .section1-box1 .box1-img .fa-solid:hover + .atc {
+  display: block;
+  opacity: 1;
+}
+.section1 .section1-box1 .box1-img:hover .fa-solid {
+  opacity: 0.7;
+}
+.section1 .section1-box1 .box1-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section1 .section1-box1 .box1-info .Posters {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.section1 .section1-box1 .box1-info .Poster-V1 {
+  font-size: 16px;
+}
+.section1 .section1-box1 .box1-info .cost {
+  color: #585858;
+}
+.section1 .section1-box2 {
+  height: 500px;
+}
+.section1 .section1-box2 .box2-img {
+  position: relative;
+  max-width: 350px;
+  min-height: 350px;
+  cursor: pointer;
+}
+.section1 .section1-box2 .box2-img .fa-solid {
+  opacity: 0;
+  color: green;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  transition: 300ms;
+}
+.section1 .section1-box2 .box2-img .atc {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 90px;
+  height: 24px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 300ms;
+}
+.section1 .section1-box2 .box2-img .fa-solid:hover + .atc {
+  display: block;
+  opacity: 1;
+}
+.section1 .section1-box2 .box2-img:hover .fa-solid {
+  opacity: 0.7;
+}
+.section1 .section1-box2 .box2-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section1 .section1-box2 .box2-info .Posters {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.section1 .section1-box2 .box2-info .Poster-V1 {
+  font-size: 16px;
+}
+.section1 .section1-box2 .box2-info .cost {
+  color: #585858;
+}
+.section1 .section1-box3 {
+  height: 500px;
+}
+.section1 .section1-box3 .box3-img {
+  position: relative;
+  max-width: 350px;
+  min-height: 350px;
+  cursor: pointer;
+}
+.section1 .section1-box3 .box3-img .fa-solid {
+  opacity: 0;
+  color: green;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  transition: 300ms;
+}
+.section1 .section1-box3 .box3-img .atc {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 90px;
+  height: 24px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 300ms;
+}
+.section1 .section1-box3 .box3-img .fa-solid:hover + .atc {
+  display: block;
+  opacity: 1;
+}
+.section1 .section1-box3 .box3-img:hover .fa-solid {
+  opacity: 0.7;
+}
+.section1 .section1-box3 .box3-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section1 .section1-box3 .box3-info .Posters {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.section1 .section1-box3 .box3-info .Poster-V1 {
+  font-size: 16px;
+}
+.section1 .section1-box3 .box3-info .cost {
+  color: #585858;
+}
+
+.section2 {
+  max-width: 100%;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section2 .section2-name h2 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.section2 .section2-allinfo {
+  display: flex;
+  gap: 50px;
+}
+.section2 .section2-allinfo .section2-info1 {
+  max-width: 300px;
+  min-height: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section2 .section2-allinfo .section2-info1 .section2-icon {
+  font-size: 30px;
+  color: #2c541d;
+}
+.section2 .section2-allinfo .section2-info1 .section2-author img {
+  border-radius: 50%;
+}
+.section2 .section2-allinfo .section2-info2 {
+  max-width: 300px;
+  min-height: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section2 .section2-allinfo .section2-info2 .section2-icon {
+  font-size: 30px;
+  color: #2c541d;
+}
+.section2 .section2-allinfo .section2-info2 .section2-author img {
+  border-radius: 50%;
+}
+.section2 .section2-allinfo .section2-info3 {
+  max-width: 300px;
+  min-height: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section2 .section2-allinfo .section2-info3 .section2-icon {
+  font-size: 30px;
+  color: #2c541d;
+}
+.section2 .section2-allinfo .section2-info3 .section2-author img {
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
