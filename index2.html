@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/CSS/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-nav">
+        <div class="header-nav-name">
+          <img
+            src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/11/EARTH-STORE-200x35.png"
+            alt=""
+          />
+        </div>
+        <div class="header-nav-item">
+          <ul class="ul-item">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SHOP</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+          <ul class="ul-icon">
+            <li>
+              <i class="fa-solid fa-bag-shopping">
+                <sup><span class="amount">0</span></sup></i
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-user"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section id="postcard-section">
+        <div class="seach-sct">
+        <div class="seach-sct-cont">
+            <div class="input">
+                <input type="text" placeholder="Seach Products">
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+            <div class="range_container">
+                <div class="sliders_control">
+                   <input id="fromSlider" type="range" value="10" min="0" max="100"/>
+                   <input id="toSlider" type="range" value="30" min="0" max="100"/>
+                </div>
+                <div class="form_control">
+                  <div class="form_control_container">
+                      <div class="form_control_container__time">Min</div>
+                      <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
+                    </div>
+                    <div class="form_control_container">
+                      <div class="form_control_container__time">Max</div>
+                      <input class="form_control_container__time__input" type="number" id="toInput" value="30" min="0" max="100"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories">
+            <div>Categories</div>
+            <ul class="ul">
+                <li>Postcards(6)</li>
+                <li>Posters(6)</li>
+            </ul>
+        </div>
+
+        </div>
+        <div class="postcard">
+
+        </div>
+    </section>
+
+    <script src="./assets/js/script2.js"></script>
+  </body>
+</html>
