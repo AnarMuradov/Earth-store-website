@@ -10,6 +10,11 @@
     font-size: 38px;
     font-weight: 600;
 }
+@media only screen and (max-width: 300px){
+  .section2-name h2{
+       font-size: 26px;
+   }
+}
   .section2-allinfo {
     display: flex;
     gap: 50px;
@@ -26,6 +31,11 @@
       .section2-author img{
         border-radius: 50%;
       }
+      .author-name{
+        font-size: 11px;
+        margin-top: 15px;
+        font-weight: bold;
+      }
     }
     .section2-info2 {
       max-width: 300px;
@@ -39,6 +49,11 @@
       }
       .section2-author img{
         border-radius: 50%;
+      }
+      .author-name{
+        font-size: 11px;
+        margin-top: 15px;
+        font-weight: bold;
       }
     }
     .section2-info3 {
@@ -54,6 +69,15 @@
       .section2-author img{
         border-radius: 50%;
       }
+      .author-name{
+        font-size: 11px;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .section2-allinfo {flex-direction: column
     }
   }
 }

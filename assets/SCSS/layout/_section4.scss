@@ -1,0 +1,105 @@
+.section4 {
+  max-width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  .section4-box1 {
+    padding: 0 48px 0 0;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    border-color: #eae9ec;
+    display: flex;
+    gap: 20px;
+    .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #2c541d;
+      text-align: center;
+      line-height: 40px;
+      font-size: 18px;
+      color: white;
+    }
+    .box1-content {
+      display: grid;
+      gap: 10px;
+      h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      h4 {
+        font-size: 14px;
+        color: #585858;
+        font-weight: 100;
+      }
+    }
+  }
+  .section4-box2 {
+    padding: 0 48px 0 0;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    border-color: #eae9ec;
+    display: flex;
+    gap: 20px;
+    .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #2c541d;
+      text-align: center;
+      line-height: 40px;
+      font-size: 18px;
+      color: white;
+    }
+    .box2-content {
+      display: grid;
+      gap: 10px;
+      h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      h4 {
+        font-size: 14px;
+        color: #585858;
+        font-weight: 100;
+      }
+    }
+  }
+  .section4-box3 {
+    padding: 0 48px 0 0;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    border-color: #eae9ec;
+    display: flex;
+    gap: 20px;
+    .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #2c541d;
+      text-align: center;
+      line-height: 40px;
+      font-size: 18px;
+      color: white;
+    }
+    .box3-content {
+      display: grid;
+      gap: 10px;
+      h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      h4 {
+        font-size: 14px;
+        color: #585858;
+        font-weight: 100;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px){
+    .section4 {flex-direction: column
+    }
+  }

@@ -1,0 +1,19 @@
+.footer{
+    max-width: 100%;
+    min-height: 105px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .list ul{
+        display: flex;
+        gap: 20px;
+
+    }
+}
+@media only screen and (max-width: 600px){
+    .footer {flex-direction: column;
+        .list ul{
+           flex-direction: column;
+        }
+    }
+  }
