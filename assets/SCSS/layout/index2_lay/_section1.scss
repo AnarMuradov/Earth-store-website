@@ -1,26 +1,28 @@
-#postcard-section {
+#shop-section {
   display: flex;
-  margin: 50px 0px;
+  margin: 50px 0px 0px 80px;
+  justify-content: space-evenly;
   .seach-sct {
     width: 320px;
     height: 100vh;
-    .input{
-        display: flex;
-        gap: 5px;
-        input{
-            width: 190px;
-            height: 50px;
-            border: 1px solid #a1a1a180;
-            padding: 12px;
-        }
-        .fa-magnifying-glass{
-            width: 50px;
-            height: 50px;
-            background-color: #74a84a;
-            color: white;
-            text-align: center;
-            line-height: 50px;
-        }
+    border-right: 1px solid #a1a1a180;
+    .input {
+      display: flex;
+      gap: 5px;
+      input {
+        width: 190px;
+        height: 50px;
+        border: 1px solid #a1a1a180;
+        padding: 12px;
+      }
+      .fa-magnifying-glass {
+        width: 50px;
+        height: 50px;
+        background-color: #74a84a;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+      }
     }
     .seach-sct-cont {
       display: flex;
@@ -59,7 +61,6 @@
       }
 
       input[type="range"]::-moz-range-thumb {
-        // -webkit-appearance: none;
         pointer-events: all;
         width: 24px;
         height: 24px;
@@ -107,11 +108,818 @@
       }
     }
 
-    .categories{
-        margin-left: 20px;
-        .ul li{
-            margin-left: 40px ;
+    .categories {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: #74a84a;
+      .categories-name {
+        font-weight: 700;
+      }
+      .ul li {
+        margin-left: 40px;
+        a {
+          color: #74a84a;
         }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
     }
+  }
+  @media only screen and (max-width: 1070px) {
+    .seach-sct {
+      width: 100%;
+      height: 500px;
+      border-right: 0px solid #a1a1a180;
+    }
+  }
+  .shop-container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .spantxt {
+      color: #777777;
+    }
+    .sct-name {
+      font-size: 50px;
+      color: #74a84a;
+      margin-bottom: 20px;
+    }
+    .select {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 33px;
+      span {
+        color: #585858;
+      }
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 10px;
+      .card-box1 {
+        height: 335px;
+        .box1-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box1-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box1-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+      .card-box2 {
+        height: 335px;
+        .box2-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box2-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box2-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+      .card-box3 {
+        height: 335px;
+        .box3-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box3-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box3-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+      .card-box4 {
+        height: 335px;
+        .box4-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box4-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box4-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+      .card-box5 {
+        height: 335px;
+        .box5-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box5-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box5-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+      .card-box6 {
+        height: 335px;
+        .box6-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box6-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box6-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+      .card-box7 {
+        height: 335px;
+        .box7-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box7-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box7-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+
+      .card-box8 {
+        height: 335px;
+        .box8-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box8-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box8-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+
+      .card-box9 {
+        height: 335px;
+        .box9-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box9-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box9-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+
+      .card-box10 {
+        height: 335px;
+        .box10-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box10-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box10-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+
+      .card-box11 {
+        height: 335px;
+        .box11-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box11-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box11-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+
+      .card-box12 {
+        height: 335px;
+        .box12-img {
+          position: relative;
+          max-width: 235px;
+          min-height: 235px;
+          cursor: pointer;
+          .fa-solid {
+            opacity: 0;
+            color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            transition: 300ms;
+          }
+          .atc {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 90px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .fa-solid:hover + .atc {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .box12-img:hover .fa-solid {
+          opacity: 0.7;
+        }
+        .box12-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Posters {
+            font-size: 15px;
+            opacity: 0.6;
+          }
+          .Poster-V1 {
+            font-size: 16px;
+          }
+          .cost {
+            color: #585858;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      .card-container {
+        grid-template-columns: auto auto !important;
+      }
+    }
+    @media only screen and (max-width: 550px) {
+      .card-container {
+        grid-template-columns: auto !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  #shop-section {
+    flex-direction: column;
+  }
+  .seach-sct {
+    width: 100%;
+    height: 300px;
+    border-right: 1px solid #a1a1a180;
   }
 }
